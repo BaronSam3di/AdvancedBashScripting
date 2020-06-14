@@ -2,4 +2,5 @@
 #
 # Command Substitution
 
-echo date +%d-%m-%Y
+now=$(date +%d-%m-%Y)
+echo $now
