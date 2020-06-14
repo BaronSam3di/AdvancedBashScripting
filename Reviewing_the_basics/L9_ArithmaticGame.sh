@@ -67,7 +67,7 @@ function check_answer(){
 }
 
 function init_log(){
-    echo "---------- Log for $(date +%d-%m-%Y)'  ' %H:%M" >> Arithmatic-Game-logfile.txt
+    echo "---------- Log for $(date +%d-%m-%Y'  '%H:%M)" >> Arithmatic-Game-logfile.txt
 }
 
 function write_to_the_log(){
