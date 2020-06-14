@@ -38,11 +38,11 @@ function determine_operation(){
     esac
 }
 
-fucntion calculate_answer(){
+function calculate_answer(){
     CORRECT_ANSWER="$(echo "$QUESTION" | bc )"
 }
 
-fucntion check_answer(){
+function check_answer(){
     if [ $ANSWER -eq $CORRECT_ANSWER 2>/dev/null ] ; then
         echo "Correct!"
         CORRECT=1
@@ -55,12 +55,13 @@ fucntion check_answer(){
         if [ $TRY -eq $MAX_TRIES ]; then
             TRY=$(($MAX_TRIES + 1))
             write_to_the_log
+            echo ----------------------------------------
             echo "The correct answer was $CORRECT_ANSWER"
             echo "Let's try the next one (press the ENTER button)"
             read
         else
             TRY=$(($TRY +1))
-            echo "Please try again..." ( Attempt: $TRY )
+            echo "Please try again... ( Attempt: $TRY )"
         fi
     fi        
 }
@@ -93,4 +94,5 @@ do
         read ANSWER
         check_answer
     done
+done
 exit 0
