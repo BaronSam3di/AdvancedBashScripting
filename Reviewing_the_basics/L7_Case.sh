@@ -4,7 +4,7 @@
 echo how are you?
 read USERISFEELING
 
-USERISFEELING=`echo $USERISFEELING | tr a-z A-Z`    # tr will transelate all lowercaser to upper case because...
+USERISFEELING=`echo $USERISFEELING | tr a-z A-Z`    # tr will translate all lowercaser to upper case because...
 
 [ -z $USERISFEELING ] && exit 1                     # exit 12 is just something went wrong
 
