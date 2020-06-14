@@ -10,7 +10,8 @@ echo "\$* gives $*"         # one way to refer to all the args provided
 echo "\$# gives $#"         # a counter to show the amount of args
 echo "\$@ gives $@"         # another way to refer to all the args provided
 echo "\$0 gives $0"         # $0 is the name of the file
-echo       # Blank line
+
+echo                        # Blank line
 
 # trying to show every single argument on a seperated line
 echo showing the interepretation of \$*
@@ -19,7 +20,7 @@ do
     echo $item              # $* will print all on the same line
 done
 
-echo       # Blank line
+echo                        # Blank line
 
 
 echo showing the interepretation of \$@
