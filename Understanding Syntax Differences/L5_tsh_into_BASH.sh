@@ -5,7 +5,7 @@
 
 if [[ $# != 2 ]]; then
     # redirect output to error output
-    echo "Usage: $0 oldestension newextension"
+    echo "Usage: $0 oldexstension newextension"
     # return with a non-zero status (indicating error)
     exit 1
 fi
